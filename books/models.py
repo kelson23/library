@@ -9,9 +9,9 @@ class Category(models.Model):
 
 class Books(models.Model):
     idBook = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     category = models.ForeignKey(Category, default=None, on_delete = models.CASCADE)
-    bookCover = models.ImageField(upload_to='images/')
+    bookCover = models.ImageField(upload_to='books/static/images/')
     author = models.CharField(max_length=255)
     publishDate = models.DateField()
     pages = models.IntegerField()
