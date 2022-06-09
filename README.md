@@ -12,8 +12,8 @@ Utilizado Rest Framework para Django.
 
 *Altere as configurações do banco em DATABASES.
 
-*Abra o terminal e digite python manager.py makemigrations.
+*Abra o terminal e digite python manager.py makemigrations
 
-*Depois digite python manager.py migrate.
+*Depois digite python manager.py migrate
 
-*Por último digite python manager.py runserver.
+*Por último digite python manager.py runserver
