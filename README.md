@@ -17,3 +17,8 @@ Utilizado Rest Framework para Django.
 *Depois digite python manage.py migrate
 
 *Por último digite python manage.py runserver
+
+### Detalhe Sobre o Back-end
+O projeto foi feito com o front-end desmembrado do back-end utilizando reactjs para o front.
+Para que o react consiga consumir os endpoints da nossa api é necessário permitir o aceso do localhost na porta 3000 (porta que o react roda)
+Para isso foi instalado o corsheaders no projeto Django.
